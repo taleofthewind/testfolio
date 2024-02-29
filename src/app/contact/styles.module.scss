@@ -1,0 +1,32 @@
+@import '../../styles/typography.scss';
+
+.heading_3{
+    @extend .head_text;
+    font-weight: 700;
+    font-size: 25px;
+}
+.contact_p{
+    @extend .font_poppins;
+    color: #147efb;
+    font-weight: 700;
+    font-size: 18px;
+}
+.contact_body{
+    @extend .font_poppins;
+    color: #767676;
+}
+.heading_1{
+    @extend .font_poppins;
+    font-weight: 600;
+    font-size: 17px;
+}
+.contact_icons{
+    display: flex;
+    cursor: pointer;
+    justify-content: center;
+    padding: 10px;
+    width: 60px;
+    height: 55px;
+    margin-left: auto;
+    border-radius: 50%;
+}

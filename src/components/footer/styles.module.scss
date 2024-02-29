@@ -1,0 +1,12 @@
+@import '../../styles/typography.scss';
+
+.footer_h1{
+    @extend .h1_styles;
+    font-size: 19px;
+    font-weight: 700;
+}
+.hover_icon:hover{
+  transform: scale(1.2);
+  transition: all ease .7s 0s;
+}
+

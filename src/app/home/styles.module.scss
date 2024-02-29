@@ -1,0 +1,8 @@
+@import '../../styles/typography.scss';
+
+.header{
+    @extend .hero_heading;
+    font-size: 40px;
+    font-weight: 700;
+    line-height: 1.2;
+}
