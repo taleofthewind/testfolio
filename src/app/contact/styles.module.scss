@@ -4,6 +4,7 @@
     @extend .head_text;
     font-weight: 700;
     font-size: 25px;
+    color: #2d2e32;
 }
 .contact_p{
     @extend .font_poppins;
@@ -27,6 +28,5 @@
     padding: 10px;
     width: 60px;
     height: 55px;
-    margin-left: auto;
     border-radius: 50%;
 }

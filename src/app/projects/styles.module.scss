@@ -1,0 +1,8 @@
+@import '../../styles/typography.scss';
+
+.font_h1{
+    @extend .font_poppins;
+    font-weight: 800;
+    color: #2d2e32;
+    font-size: clamp(23px, 4vw, 25px);
+}

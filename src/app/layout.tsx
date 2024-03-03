@@ -6,6 +6,7 @@ import Home from '@/app/home/page'
 import About from '@/app/about/page'
 import Footer from '@/components/footer/page'
 import Contact from '@/app/contact/page'
+import Projects from '@/app/projects/page'
 
 const poppins = Poppins({
   subsets: ['latin'],
@@ -30,6 +31,7 @@ export default function RootLayout({
         <Header />
         <Home />
         <About />
+        <Projects/>
         <Contact />
         <Footer />
       </section>

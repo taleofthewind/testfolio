@@ -2,16 +2,17 @@
 
 .header{
     font-family: "Poppins", sans-serif;
+    background-color: #fdfdff;
     @apply h-[70px] flex items-center justify-between px-[25px] lg:px-[80px] sticky top-0 z-10;
     &_h1{
         font-weight: 750;
-        font-size: 1.5rem;
+        font-size: 20px;
     }
     &_nav{
         @apply flex;
         &_ul {
-            @apply flex gap-[40px] font-[600] leading-[23.88px];
-            font-size: 1.2rem;   
+            @apply flex gap-[20px] font-[600] leading-[23.88px];
+            font-size: 18px;   
         }
     }
 
