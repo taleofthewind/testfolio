@@ -9,9 +9,9 @@
         font-size: 20px;
     }
     &_nav{
-        @apply flex;
+        @apply hidden lg:flex;
         &_ul {
-            @apply flex gap-[20px] font-[600] leading-[23.88px];
+            @apply flex gap-[20px] font-[600] leading-[23.88px] ;
             font-size: 18px;   
         }
     }
