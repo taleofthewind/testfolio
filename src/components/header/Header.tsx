@@ -1,6 +1,7 @@
 import React from 'react'
 import Link from 'next/link'
 import styles from './styles.module.scss'
+
 const Header = () => {
   return (
     <header className={`${styles.header} font-Poppins drop-shadow-lg`}>

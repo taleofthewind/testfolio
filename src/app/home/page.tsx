@@ -12,7 +12,7 @@ const page = () => {
   return (
     <section className='p-[98px] bg-[#f9f9f9]'>
         <div className='h-[650px] p-[80px] px-[100px]'>
-            <div className='flex mt-[50px]'>
+            <div className='flex gap-[90px] mt-[50px]'>
               <div className='gap-y-[20px]'>
                   <div className='flex py-[15px]'>
                       <h1 className={`${styles.h1_text}`}>Hi, I'm Karl Angelo. <br />
@@ -32,8 +32,10 @@ const page = () => {
                         </Link>
                   </div>
               </div>
-                <div className=''>
-                    
+                <div className='w-[700px] border-2  flex justify-center'>
+                    <div className={`${styles.heroimg} border-2 cover`}>
+                      <Image className='' src={rightImage.src} alt='heroimg' width={250} height={250} />
+                    </div>
                 </div>
             </div>
                 <div className='mt-[20px]'>
