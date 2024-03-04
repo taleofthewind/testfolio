@@ -10,7 +10,7 @@ const page = () => {
   return (
     <footer className='bg-[#2d2e32]'>
       <div className='flex w-full justify-center md:grid-rows-1 p-[50px]' id='container'>
-       <div className='w-[950px] py-[19px] '>
+       <div className='w-full px-[140px] py-[19px] '>
           <div className='grid grid-cols-1 justify-items-center gap-y-[15px] lg:flex justify-between' id='footerfc'>
                 <h1 className={`${styles.footer_h1}`}>Copyright © 2024 . All rights are reserved</h1>
                 <div className='flex gap-[20px] px-[20px]'> 
