@@ -30,7 +30,6 @@ export default function RootLayout({
       <section>
         <Header />
         <Home />
-        <About />
         <Projects/>
         <Contact />
         <Footer />

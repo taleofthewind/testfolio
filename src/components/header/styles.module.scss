@@ -3,7 +3,7 @@
 .header{
     font-family: "Poppins", sans-serif;
     background-color: #fdfdff;
-    @apply h-[70px] flex items-center justify-between px-[25px] lg:px-[80px] sticky top-0 z-10;
+    @apply h-[70px] flex items-center justify-between px-[25px] lg:px-[80px] sticky top-0 z-10 ;
     &_h1{
         font-weight: 750;
         font-size: 20px;

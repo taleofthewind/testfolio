@@ -3,7 +3,7 @@ import Link from 'next/link'
 import styles from './styles.module.scss'
 const Header = () => {
   return (
-    <header className={`${styles.header} font-Poppins`}>
+    <header className={`${styles.header} font-Poppins drop-shadow-lg`}>
           <h1 className={`${styles.header_h1}`}>kat.dev</h1>
         <nav className={`${styles.header_nav}`}>
           <ul className={`${styles.header_nav_ul}`}>

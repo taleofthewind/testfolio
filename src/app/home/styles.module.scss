@@ -1,8 +1,28 @@
 @import '../../styles/typography.scss';
 
-.header{
-    @extend .hero_heading;
-    font-size: 40px;
-    font-weight: 700;
-    line-height: 1.2;
+.h1_text{
+    @extend .font_poppins;
+    font-weight: 640;
+    font-size: 50px;
+    color: #2d2e32;
+}
+.p_text{
+    @extend .font_poppins;
+    color: #767676;
+    font-size: 18px;
+}
+
+.skill_header{
+    @extend .font_poppins;
+    font-size: 17px;
+    font-weight: 550;
+    color: #2d2e32;
+    margin-top: 15px;
+    border-right: 3px solid rgba(45, 46, 50, .5);
+}
+
+.icon_animation:hover{
+    cursor: pointer;
+    transform: translateY(-8px);
+    transition: all .3s ease-in-out;
 }

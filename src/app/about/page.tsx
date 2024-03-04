@@ -3,7 +3,7 @@ import styles from './styles.module.scss'
 import Image from 'next/image'
 const page = () => {
   return (
-   <div></div>
+   <div><h2>hahahha</h2></div>
  
   )
 }
