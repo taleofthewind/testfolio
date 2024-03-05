@@ -10,36 +10,40 @@ import { FiGithub } from "react-icons/fi";
 
 const page = () => {
   return (
-    <section className='p-[98px] bg-[#f9f9f9]'>
-        <div className='h-[650px] p-[80px] px-[100px]'>
-            <div className='flex gap-[90px] mt-[50px]'>
+    <section className='' id='home'>
+        <div className='p-[150px]'>
+            <div className='flex justify-between px-[40px] mt-[50px]'>
               <div className='gap-y-[20px]'>
-                  <div className='flex py-[15px]'>
+                  <div className='flex flex-row py-[60px]'>
                       <h1 className={`${styles.h1_text}`}>Hi, I'm Karl Angelo. <br />
-                        <span>Front-end Developer</span>
-                        <Image className='float-right ml-[12px]' alt='wave' src={waveIcon.src} width={70} height={70}></Image>
+                      <div className='flex gap-[10px]'>
+                        <span>Front-end Developer </span> 
+                        <Image className=' ' alt='wave' src={waveIcon.src} width={70} height={70}></Image>
+                      </div>
                       </h1>
                   </div>
                   <div className=''>
                       <p className={`${styles.p_text} leading-tight`}>A passionate Front-End Developer based in Pangasinan, Philippines. 📍 </p>
                   </div>
-                  <div className='flex gap-[15px] py-[20px]'>
-                        <Link href={"https://www.linkedin.com/in/karl-angelo-tadeo-27579429a/"}>
-                            <AiOutlineLinkedin size={40} className='text-[#2d2e32] mr-[2px] hover:text-blue-600'/>
-                        </Link>
-                        <Link href={"https://github.com/taleofthewind"}>
-                            <FiGithub size={34} className='text-[#2d2e32] mt-[3px] hover:text-blue-600'/>
-                        </Link>
+                  <div className='flex justify-center lg:justify-start'>
+                    <div className='flex gap-[15px] py-[20px]'>
+                          <Link href={"https://www.linkedin.com/in/karl-angelo-tadeo-27579429a/"}>
+                              <AiOutlineLinkedin size={40} className='text-[#2d2e32] mr-[2px] hover:text-blue-600'/>
+                          </Link>
+                          <Link href={"https://github.com/taleofthewind"}>
+                              <FiGithub size={34} className='text-[#2d2e32] mt-[3px] hover:text-blue-600'/>
+                          </Link>
+                    </div>
                   </div>
               </div>
-                <div className='w-[700px] border-2  flex justify-center'>
-                    <div className={`${styles.heroimg} border-2 cover`}>
-                      <Image className='' src={rightImage.src} alt='heroimg' width={250} height={250} />
+                <div className='w-[700px] flex justify-center hidden'>
+                    <div className={`${styles.heroimg} overflow-hidden`}>
+                      <Image className='' src={rightImage.src} alt='heroimg' width={300} height={300} />
                     </div>
                 </div>
             </div>
-                <div className='mt-[20px]'>
-                    <div className='flex gap-[50px]'>
+                <div className='mt-[20px] px-[40px] '>
+                    <div className='grid gap-[50px] justify-items-center  lg:flex'>
                         <div className={`${styles.border_div} w-[130px]`}>
                           <h1 className={`${styles.skill_header}`}>Tech Stack</h1>
                         </div>
@@ -60,7 +64,6 @@ const page = () => {
                     </div>
                 </div>
         </div>
-        <hr />
     </section>
   )
 }

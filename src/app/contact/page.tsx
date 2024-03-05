@@ -7,7 +7,7 @@ import styles from './styles.module.scss'
 
 const page = () => {
   return (
-    <section >
+    <section id='contact'>
       <div className='' id='container'>
           <div className='grid justify-center m-[20px] py-[50px]'>
               <div className='py-[15px] leading-loose sm:py-[40px]' id='contents'>
