@@ -1,24 +1,32 @@
+'use client'
 import React from 'react'
 import Image from 'next/image'
 import rightImage from '@public/image/profile.jpg'
 import styles from './styles.module.scss'
 import Link from 'next/link'
 import waveIcon from '@public/png/wave.png'
+import { saveAs } from 'file-saver'
 //icons
 import { AiOutlineLinkedin } from "react-icons/ai";
 import { FiGithub } from "react-icons/fi";
+import { IoMdDownload } from "react-icons/io";
 
 const page = () => {
+  const handleDown = () =>{
+    const pdfFileUrl = '/pdfs/resume.pdf';
+    saveAs(pdfFileUrl, "resume.pdf")
+  }
+
   return (
     <section className='' id='home'>
         <div className='p-[150px]'>
             <div className='flex justify-between px-[40px] mt-[50px]'>
               <div className='gap-y-[20px]'>
-                  <div className='flex flex-row py-[60px]'>
+                  <div className='flex flex-row py-[20px]'>
                       <h1 className={`${styles.h1_text}`}>Hi, I'm Karl Angelo. <br />
                       <div className='flex gap-[10px]'>
                         <span>Front-end Developer </span> 
-                        <Image className=' ' alt='wave' src={waveIcon.src} width={70} height={70}></Image>
+                        <Image className='hidden lg:hidden xl:flex' alt='wave' src={waveIcon.src} width={70} height={70}></Image>
                       </div>
                       </h1>
                   </div>
@@ -35,8 +43,15 @@ const page = () => {
                           </Link>
                     </div>
                   </div>
+                  <div className='flex justify-center lg:place-content-start'>
+                    <div>
+                      <button onClick={handleDown} className="btn btn-outline">Download CV
+                        <IoMdDownload />
+                      </button>
+                    </div>
+                  </div>
               </div>
-                <div className='w-[700px] flex justify-center hidden'>
+                <div className='w-[700px] hidden xl:flex justify-center md:hidden'>
                     <div className={`${styles.heroimg} overflow-hidden`}>
                       <Image className='' src={rightImage.src} alt='heroimg' width={300} height={300} />
                     </div>
