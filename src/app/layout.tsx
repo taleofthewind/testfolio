@@ -29,7 +29,7 @@ export default function RootLayout({
     <body>
       <section>
         <Header />
-        <Home />
+        
         <About />
         <Projects/>
         <Contact />
